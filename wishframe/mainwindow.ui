@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>807</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>807</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau_fichier"/>
+    <addaction name="actionOuvrir_un_fichier"/>
+    <addaction name="actionSauvegarder"/>
+    <addaction name="actionSauvegarder_sous"/>
+    <addaction name="actionSauvegarder_sous_forme_d_image"/>
+    <addaction name="separator"/>
+    <addaction name="actionFermer"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menu_dition">
+    <property name="title">
+     <string>Édition</string>
+    </property>
+    <addaction name="actionRenommer_Onglet"/>
+    <addaction name="separator"/>
+    <addaction name="actionAnnuler"/>
+    <addaction name="actionCouper"/>
+    <addaction name="actionCopier"/>
+    <addaction name="actionColler"/>
+    <addaction name="separator"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="actionModifier_objet"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menu_dition"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionajouterBouton"/>
+   <addaction name="separator"/>
+   <addaction name="actionajouterImage"/>
+   <addaction name="separator"/>
+   <addaction name="actionajouterRectangle"/>
+   <addaction name="separator"/>
+   <addaction name="actionajouterChampDeTexte"/>
+   <addaction name="separator"/>
+   <addaction name="actionajouterCheckBox"/>
+   <addaction name="separator"/>
+   <addaction name="actionajouterRadioBox"/>
+   <addaction name="separator"/>
+   <addaction name="actionajouterListeDeroulante"/>
+  </widget>
+  <action name="actionNouveau_fichier">
+   <property name="text">
+    <string>Nouvelle page</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_un_fichier">
+   <property name="text">
+    <string>Ouvrir un fichier</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder">
+   <property name="text">
+    <string>Sauvegarder modèle</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder_sous">
+   <property name="text">
+    <string>Sauvegarder modèle sous...</string>
+   </property>
+  </action>
+  <action name="actionFermer">
+   <property name="text">
+    <string>Fermer</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionAnnuler">
+   <property name="text">
+    <string>Annuler</string>
+   </property>
+  </action>
+  <action name="actionR_tablir">
+   <property name="text">
+    <string>Rétablir</string>
+   </property>
+  </action>
+  <action name="actionCouper">
+   <property name="text">
+    <string>Couper</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopier">
+   <property name="text">
+    <string>Copier</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionColler">
+   <property name="text">
+    <string>Coller</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer objet</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionajouterBouton">
+   <property name="text">
+    <string>ajouterBouton</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouter bouton</string>
+   </property>
+  </action>
+  <action name="actionajouterImage">
+   <property name="text">
+    <string>ajouterImage</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouterImage</string>
+   </property>
+  </action>
+  <action name="actionajouterRectangle">
+   <property name="text">
+    <string>ajouterRectangle</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouterRectangle</string>
+   </property>
+  </action>
+  <action name="actionajouterChampDeTexte">
+   <property name="text">
+    <string>ajouterChampDeTexte</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouterChampDeTexte</string>
+   </property>
+  </action>
+  <action name="actionajouterCheckBox">
+   <property name="text">
+    <string>ajouterCheckBox</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouterCheckBox</string>
+   </property>
+  </action>
+  <action name="actionajouterRadioBox">
+   <property name="text">
+    <string>ajouterRadioBox</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouterRadioBox</string>
+   </property>
+  </action>
+  <action name="actionajouterListeDeroulante">
+   <property name="text">
+    <string>ajouterListeDeroulante</string>
+   </property>
+   <property name="toolTip">
+    <string>ajouterListeDeroulante</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder_sous_forme_d_image">
+   <property name="text">
+    <string>Sauvegarder sous forme d'image</string>
+   </property>
+  </action>
+  <action name="actionRenommer_Onglet">
+   <property name="text">
+    <string>Renommer Onglet</string>
+   </property>
+  </action>
+  <action name="actionModifier_objet">
+   <property name="text">
+    <string>Modifier objet</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
